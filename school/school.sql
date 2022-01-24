@@ -12,7 +12,7 @@ CREATE TABLE students (
   last_name TEXT,
   email TEXT,
   phone_number TEXT
-)
+);
 
 -- Create the rest of the tables
 CREATE TABLE teachers (
@@ -20,20 +20,20 @@ CREATE TABLE teachers (
   first_name TEXT,
   last_name TEXT,
   bio TEXT
-)
+);
 
 CREATE TABLE courses (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   name TEXT,
   description TEXT
-)
+);
 
 CREATE TABLE sections (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
   time TEXT,
   course_id INTEGER,
   teacher_id INTEGER
-)
+);
 
 CREATE TABLE enrollments (
   id INTEGER PRIMARY KEY AUTOINCREMENT,
